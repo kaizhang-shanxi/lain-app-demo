@@ -11,5 +11,5 @@ release:
     - src: /lain/app/lain-app-demo
       dest: /lain/app/lain-app-demo
 web:
-  # cmd: sleep 100
-  cmd: /lain/app/entry.sh
+  cmd: sleep 100
+  # cmd: /lain/app/entry.sh
