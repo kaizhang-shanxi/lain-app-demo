@@ -3,16 +3,17 @@ build:
   base: registry.yxapp.xyz/centos-golang:go1.6.2
   script:
     # - go build
-    - go build -o hello
+    # - go build -o hello
+    - go build -o lain-app-demo
 release:
   dest_base: registry.yxapp.xyz/centos:1.0.1
   copy:
     - src: /lain/app/entry.sh
       dest: /lain/app/entry.sh
-    # - src: /lain/app/lain-app-demo
-    #   dest: /lain/app/lain-app-demo
-    - src: /lain/app/hello
-      dest: /lain/app/hello
+    - src: /lain/app/lain-app-demo
+      dest: /lain/app/lain-app-demo
+    # - src: /lain/app/hello
+    #   dest: /lain/app/hello
 web:
   # cmd: sleep 100
   cmd: /lain/app/entry.sh

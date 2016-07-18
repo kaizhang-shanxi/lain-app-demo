@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# ./lain-app-demo
-./hello
+./lain-app-demo
+# ./hellhello
