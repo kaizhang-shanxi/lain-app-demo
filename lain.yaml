@@ -3,7 +3,7 @@ build:
   base: registry.yxapp.xyz/centos-golang:go1.6.2
   script:
     - go build
-    - ls
+    - echo "ls" && ls -l
     # - go build -o hello
     # - go build -o lain-app-demo
 release:
