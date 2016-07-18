@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/lain/app/lain-app-demo
+./lain-app-demo
