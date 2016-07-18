@@ -2,10 +2,7 @@ appname: lain-app-demo
 build:
   base: registry.yxapp.xyz/centos-golang:go1.6.2
   script:
-    - go build
-    - echo "ls" && ls -l
-    # - go build -o hello
-    # - go build -o lain-app-demo
+    - go build -o lain-app-demo
 release:
   dest_base: registry.yxapp.xyz/centos:1.0.1
   copy:
@@ -13,8 +10,6 @@ release:
       dest: /lain/app/entry.sh
     - src: /lain/app/lain-app-demo
       dest: /lain/app/lain-app-demo
-    # - src: /lain/app/hello
-    #   dest: /lain/app/hello
 web:
   # cmd: sleep 100
   cmd: /lain/app/entry.sh
