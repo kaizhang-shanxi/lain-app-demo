@@ -13,6 +13,7 @@ release:
 web:
   # cmd: ["sleep", "100"]
   # cmd: /lain/app/entry.sh
+  cmd: ["pwd"]
   num_instances: 1
   logs:
     - monitor.log
