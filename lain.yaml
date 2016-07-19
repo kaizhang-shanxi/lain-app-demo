@@ -13,6 +13,6 @@ release:
 web:
   cmd: sleep 100
   # cmd: /lain/app/entry.sh
-  num_instance: 1
+  num_instances: 1
   logs:
     - monitor.log
